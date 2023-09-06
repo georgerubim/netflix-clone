@@ -10,6 +10,7 @@ preventAutoHideAsync();
 export default function App() {
   const [splashComplete, setSplashComplete] = useState(false);
 
+
   return (
     <>
     <StatusBar style="light" />

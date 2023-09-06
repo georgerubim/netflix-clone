@@ -1,7 +1,6 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import AppIntroSlider from "react-native-app-intro-slider"
-import { useState } from 'react';
 
 
 const slides = [
@@ -64,7 +63,8 @@ export default function Home() {
       </View>
       
       <StatusBar style="light" backgroundColor='#000' />
-      <AppIntroSlider style={{backgroundColor: '#000'}} 
+      <AppIntroSlider 
+      style={{backgroundColor: '#000'}} 
       renderItem={renderSlides} 
       data={slides}
       activeDotStyle={{backgroundColor:"white", bottom:60}}
